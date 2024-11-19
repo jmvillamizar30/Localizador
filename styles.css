@@ -1,0 +1,198 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales del cuerpo */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f8ff; /* Azul claro */
+    color: #333;
+}
+
+/* Estilos del encabezado */
+.header {
+    background-color: #b0e0e6; /* Celeste */
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    border-bottom: 2px solid #1e90ff; /* Azul oscuro */
+}
+
+.header-title {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* Navegación */
+.nav {
+    margin-top: 10px;
+}
+
+.nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.nav-link.active {
+    font-weight: bold;
+    border-bottom: 2px solid #fff;
+}
+
+/* Contenido principal */
+.main-content {
+    margin-top: 100px; /* Para evitar que el contenido quede oculto bajo el encabezado fijo */
+    padding: 20px;
+}
+
+/* Sección */
+.section {
+    padding: 30px;
+    margin: 20px 0;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos de sección */
+.section-title {
+    font-size: 2rem;
+    color: #4682b4; /* Azul oscuro */
+    margin-bottom: 15px;
+}
+
+/* Texto de sección */
+.section-text {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.8;
+}
+
+/* Contenedor de la imagen principal */
+.hero-container {
+    position: relative;
+    text-align: center;
+    padding: 40px;
+}
+
+.hero-image {
+    width: 70%; /* Ajusta el ancho según sea necesario */
+    max-width: 600px; /* Ajusta el tamaño máximo según sea necesario */
+    height: auto;
+    border-radius: 10px;
+    margin: 0 auto; /* Centra la imagen */
+    display: block;
+}
+
+/* Botones de llamada a la acción */
+.cta-button {
+    display: inline-block;
+    padding: 12px 25px;
+    margin: 20px 0;
+    background-color: #00bfff; /* Celeste */
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 18px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #1e90ff; /* Azul */
+    transform: scale(1.05);
+}
+
+/* Imágenes del equipo */
+.team-photo-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.team-photo {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Miembros del equipo */
+.team-members {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    flex: 1;
+    margin: 10px;
+    text-align: center;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+/* Estilos del pie de página */
+.footer {
+    background-color: #b0e0e6; /* Celeste */
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    border-top: 2px solid #1e90ff; /* Azul oscuro */
+}
+
+/* Animaciones */
+@keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slide-in {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes zoom-in {
+    from { transform: scale(0.9); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+.fade-in {
+    animation: fade-in 1s ease-in-out;
+}
+
+.slide-in {
+    animation: slide-in 1s ease-in-out;
+}
+
+.zoom-in {
+    animation: zoom-in 1s ease-in-out;
+}
