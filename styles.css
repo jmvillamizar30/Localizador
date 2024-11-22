@@ -196,3 +196,44 @@ body {
 .zoom-in {
     animation: zoom-in 1s ease-in-out;
 }
+/* Animaciones */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes zoom-in {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+/* Animación de la imagen */
+.hero-image {
+    width: 45%; /* Asegúrate de que la imagen ocupe el 100% de su contenedor */
+    max-width: 800px; /* Limita el tamaño máximo de la imagen */
+    height: auto;
+    border-radius: 10px; /* Bordes redondeados para la imagen */
+    margin: 0 auto; /* Centra la imagen */
+    display: block;
+    animation: zoom-in 1.5s ease-out, fade-in 1s ease-in-out; /* Combinación de ambas animaciones */
+}

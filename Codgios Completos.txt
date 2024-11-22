@@ -1,0 +1,414 @@
+About.html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nosotros - Medicina Integral</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header slide-in">
+        <h1 class="header-title">Medicina Integral</h1>
+        <nav class="nav">
+            <ul>
+                <li><a href="inicio.html" class="nav-link">Inicio</a></li>
+                <li><a href="servicios.html" class="nav-link">Servicios</a></li>
+                <li><a href="about.html" class="nav-link active">Sobre Nosotros</a></li>
+                <li><a href="contact.html" class="nav-link">Contacto</a></li>
+                <li><a href="consultas.html" class="nav-link">Consultas en Línea</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-content">
+        <section class="section slide-in">
+            <h2 class="section-title">Sobre Nosotros</h2>
+            <div class="team-photo-container">
+                <img src="medicos.jpg" alt="Equipo Médico" class="team-photo">
+            </div>
+            <div class="team-members">
+                <div class="team-member">
+                    <img src="doctor1.jpg" alt="Doctor 1" class="profile-photo">
+                    <h3>Dr. Juan Pérez</h3>
+                    <p>Médico General con 10 años de experiencia en atención primaria.</p>
+                </div>
+                <div class="team-member">
+                    <img src="doctor2.jpg" alt="Doctor 2" class="profile-photo">
+                    <h3>Dr. Ana Gómez</h3>
+                    <p>Especialista en medicina interna con enfoque en salud preventiva.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer fade-in">
+        <p>&copy; 2024 Medicina Online. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
+Consultas.html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultas en Línea - Medicina Integral</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header slide-in">
+        <h1 class="header-title">Medicina Integral</h1>
+        <nav class="nav">
+            <ul>
+                <li><a href="inicio.html" class="nav-link">Inicio</a></li>
+                <li><a href="servicios.html" class="nav-link">Servicios</a></li>
+                <li><a href="about.html" class="nav-link">Sobre Nosotros</a></li>
+                <li><a href="contact.html" class="nav-link">Contacto</a></li>
+                <li><a href="consultas.html" class="nav-link active">Consultas en Línea</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-content">
+        <section class="section slide-in">
+            <h2 class="section-title">Consulta en Línea</h2>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSer7QlINK35Fbg4yQKfy3fwVVXRkoSHShzrLUMTPQFd4MGFKg/viewform" width="100%" height="1200" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+        </section>
+    </main>
+    <footer class="footer fade-in">
+        <p>&copy; 2024 Medicina Online. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
+contact.html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Medicina Integral</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header slide-in">
+        <h1 class="header-title">Medicina Integral</h1>
+        <nav class="nav">
+            <ul>
+                <li><a href="inicio.html" class="nav-link">Inicio</a></li>
+                <li><a href="servicios.html" class="nav-link">Servicios</a></li>
+                <li><a href="about.html" class="nav-link">Sobre Nosotros</a></li>
+                <li><a href="contact.html" class="nav-link active">Contacto</a></li>
+                <li><a href="consultas.html" class="nav-link">Consultas en Línea</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-content">
+        <section class="section slide-in">
+            <h2 class="section-title">Contáctanos</h2>
+            <p class="section-text">Puedes contactarnos a través de WhatsApp o por correo electrónico.</p>
+            <a href="https://wa.me/3143325432" class="cta-button">Enviar Mensaje por WhatsApp</a>
+            <a href="mailto:denniscardenaszambrano@gmail.com" class="cta-button">Enviar Correo Electrónico</a>
+        </section>
+    </main>
+    <footer class="footer fade-in">
+        <p>&copy; 2024 Medicina Online. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
+index.html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Medicina Integral</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header fade-in">
+        <h1 class="header-title">Medicina Integral</h1>
+        <nav class="nav">
+            <ul>
+                <li><a href="inicio.html" class="nav-link active">Inicio</a></li>
+                <li><a href="servicios.html" class="nav-link">Servicios</a></li>
+                <li><a href="about.html" class="nav-link">Sobre Nosotros</a></li>
+                <li><a href="contact.html" class="nav-link">Contacto</a></li>
+                <li><a href="consultas.html" class="nav-link">Consultas en Línea</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-content">
+        <section id="home" class="section slide-in">
+            <h2 class="section-title zoom-in">Bienvenidos a Medicina Integral</h2>
+            <p class="section-text fade-in">Ofrecemos servicios médicos de alta calidad a través de internet. Descubre nuestras ofertas y conoce a nuestro equipo.</p>
+        
+        </section>
+    </main>
+    <footer class="footer fade-in">
+        <p>&copy; 2024 Medicina Online. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
+inicio.html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Medicina Integral</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header slide-in">
+        <h1 class="header-title">Medicina Integral</h1>
+        <nav class="nav">
+            <ul>
+                <li><a href="inicio.html" class="nav-link active">Inicio</a></li>
+                <li><a href="servicios.html" class="nav-link">Servicios</a></li>
+                <li><a href="about.html" class="nav-link">Sobre Nosotros</a></li>
+                <li><a href="contact.html" class="nav-link">Contacto</a></li>
+                <li><a href="consultas.html" class="nav-link">Consultas en Línea</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-content">
+        <section id="home" class="hero-container zoom-in">
+            <img src="hero-image.jpg" alt="Hero Image" class="hero-image">
+            <a href="servicios.html" class="cta-button">Nuestros Servicios</a>
+        </section>
+    </main>
+    <footer class="footer fade-in">
+        <p>&copy; 2024 Medicina Online. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
+servicios.html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - Medicina Integral</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header slide-in">
+        <h1 class="header-title">Medicina Integral</h1>
+        <nav class="nav">
+            <ul>
+                <li><a href="inicio.html" class="nav-link">Inicio</a></li>
+                <li><a href="servicios.html" class="nav-link active">Servicios</a></li>
+                <li><a href="about.html" class="nav-link">Sobre Nosotros</a></li>
+                <li><a href="contact.html" class="nav-link">Contacto</a></li>
+                <li><a href="consultas.html" class="nav-link">Consultas en Línea</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-content">
+        <section class="section slide-in">
+            <h2 class="section-title">Nuestros Servicios</h2>
+            <p class="section-text">Nuestro servicio especializado en diabetes ofrece atención integral para quienes viven con esta condición. Ayudamos a nuestros pacientes a entender su diagnóstico, controlar sus niveles de glucosa y recibir asesoramiento sobre medicamentos, dieta y estilo de vida saludable. Nuestro objetivo es mejorar la calidad de vida a través de un enfoque personalizado y constante.</p>
+        </section>
+    </main>
+    <footer class="footer fade-in">
+        <p>&copy; 2024 Medicina Online. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
+styles.css
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales del cuerpo */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f8ff; /* Azul claro */
+    color: #333;
+}
+
+/* Estilos del encabezado */
+.header {
+    background-color: #b0e0e6; /* Celeste */
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    border-bottom: 2px solid #1e90ff; /* Azul oscuro */
+}
+
+.header-title {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* Navegación */
+.nav {
+    margin-top: 10px;
+}
+
+.nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.nav-link.active {
+    font-weight: bold;
+    border-bottom: 2px solid #fff;
+}
+
+/* Contenido principal */
+.main-content {
+    margin-top: 100px; /* Para evitar que el contenido quede oculto bajo el encabezado fijo */
+    padding: 20px;
+}
+
+/* Sección */
+.section {
+    padding: 30px;
+    margin: 20px 0;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos de sección */
+.section-title {
+    font-size: 2rem;
+    color: #4682b4; /* Azul oscuro */
+    margin-bottom: 15px;
+}
+
+/* Texto de sección */
+.section-text {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.8;
+}
+
+/* Contenedor de la imagen principal */
+.hero-container {
+    position: relative;
+    text-align: center;
+    padding: 40px;
+}
+
+.hero-image {
+    width: 70%; /* Ajusta el ancho según sea necesario */
+    max-width: 600px; /* Ajusta el tamaño máximo según sea necesario */
+    height: auto;
+    border-radius: 10px;
+    margin: 0 auto; /* Centra la imagen */
+    display: block;
+}
+
+/* Botones de llamada a la acción */
+.cta-button {
+    display: inline-block;
+    padding: 12px 25px;
+    margin: 20px 0;
+    background-color: #00bfff; /* Celeste */
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 18px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #1e90ff; /* Azul */
+    transform: scale(1.05);
+}
+
+/* Imágenes del equipo */
+.team-photo-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.team-photo {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Miembros del equipo */
+.team-members {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    flex: 1;
+    margin: 10px;
+    text-align: center;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+/* Estilos del pie de página */
+.footer {
+    background-color: #b0e0e6; /* Celeste */
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    border-top: 2px solid #1e90ff; /* Azul oscuro */
+}
+
+/* Animaciones */
+@keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slide-in {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes zoom-in {
+    from { transform: scale(0.9); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+.fade-in {
+    animation: fade-in 1s ease-in-out;
+}
+
+.slide-in {
+    animation: slide-in 1s ease-in-out;
+}
+
+.zoom-in {
+    animation: zoom-in 1s ease-in-out;
+}
