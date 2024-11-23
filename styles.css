@@ -300,4 +300,37 @@ body {
     height: auto;
     border-radius: 10px;
 }
+/* Íconos de contacto */
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
 
+.contact-icons .cta-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 1.2rem;
+}
+
+.icon-display {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 30px;
+}
+
+.contact-icon {
+    font-size: 3rem;
+    color: #1e90ff; /* Azul claro */
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.contact-icon:hover {
+    transform: scale(1.1);
+    color: #00bfff; /* Azul celeste más claro */
+}
