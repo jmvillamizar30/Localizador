@@ -5,13 +5,162 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre Nosotros - Medicina Integral</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilos para animaciones y colores anteriores */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+        }
+
+        .header {
+            background-color: #b0e0e6;
+            color: #ffffff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        .header-title {
+            margin: 0;
+            font-size: 2em;
+            animation: fadeIn 2s ease;
+        }
+
+        .nav {
+            margin-top: 10px;
+        }
+
+        .nav-link {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1em;
+        }
+
+        .nav-link:hover {
+            text-decoration: underline;
+        }
+
+        .about-section {
+            padding: 40px 20px;
+            text-align: center;
+            background-color: #ffffff;
+            max-width: 900px;
+            margin: 20px auto;
+            border-radius: 10px;
+            animation: slideIn 1.5s ease;
+        }
+
+        .section-title {
+            font-size: 2em;
+            color: #4682b4;
+            margin-bottom: 20px;
+        }
+
+        .about-image-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .about-banner {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-height: 300px; /* Ajustar tamaño */
+            animation: zoomIn 2s ease;
+        }
+
+        .doctor-profile {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            animation: fadeInUp 1.5s ease;
+        }
+
+        .profile-image {
+            max-width: 150px;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .profile-info {
+            max-width: 600px;
+            text-align: left;
+        }
+
+        .doctor-name {
+            font-size: 1.5em;
+            color: #004d7a;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #333333;
+            margin-bottom: 15px;
+        }
+
+        .footer {
+            background-color: #1e90ff;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+            font-size: 0.9em;
+        }
+
+        /* Animaciones */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes zoomIn {
+            from {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
 </head>
 <body>
-    <header class="header slide-in">
+    <header class="header">
         <h1 class="header-title">Medicina Integral</h1>
         <nav class="nav">
             <ul>
-                <li><a href="inicio.html" class="nav-link">Inicio</a></li>
+                <li><a href="index.html" class="nav-link">Inicio</a></li>
                 <li><a href="servicios.html" class="nav-link">Servicios</a></li>
                 <li><a href="about.html" class="nav-link active">Sobre Nosotros</a></li>
                 <li><a href="contact.html" class="nav-link">Contacto</a></li>
@@ -19,22 +168,32 @@
             </ul>
         </nav>
     </header>
-    <main class="main-content">
-        <section class="section slide-in">
+    <main>
+        <section class="about-section">
             <h2 class="section-title">Sobre Nosotros</h2>
-            <div class="team-photo-container">
-                <img src="medicos.jpg" alt="Equipo Médico" class="team-photo">
+            <!-- Imagen centralizada -->
+            <div class="about-image-container">
+                <img src="medicos.jpg" alt="Equipo médico trabajando" class="about-banner">
             </div>
-            <div class="team-members">
-                <div class="team-member">
-                    <img src="doctor1.jpg" alt="Doctor 1" class="profile-photo">
-                    <h3>Dra. Dennis Cardenas</h3>
-                    <p>Médico General con 10 años de experiencia en atención primaria.</p>
+            <!-- Perfil del médico -->
+            <div class="doctor-profile">
+                <img src="doctor1.jpg" alt="Foto del Médico" class="profile-image">
+                <div class="profile-info">
+                    <h3 class="doctor-name">Dra. Dennis Cardenas</h3>
+                    <p>
+                        Soy Médico General, graduada de la Universidad Cooperativa de Colombia, y Magíster en Epidemiología de la Universidad del Magdalena. Poseo más de 10 años de experiencia en la atención primaria, especializándome en el manejo de patologías crónicas como diabetes mellitus e hipertensión arterial.
+                    </p>
+                    <p>
+                        Mi experiencia profesional incluye, además, mi rol como profesora catedrática del programa de Medicina de la Universidad Cooperativa de Colombia, donde imparto conocimientos y apoyo la formación de futuros médicos.
+                    </p>
+                    <p>
+                        Mi enfoque profesional se basa en brindar atención de alta calidad, adaptada a las necesidades particulares de cada paciente, asegurando siempre su bienestar y promoviendo su salud de manera integral.
+                    </p>
                 </div>
             </div>
         </section>
     </main>
-    <footer class="footer fade-in">
+    <footer class="footer">
         <p>&copy; 2024 Medicina Online. Todos los derechos reservados.</p>
     </footer>
 </body>
