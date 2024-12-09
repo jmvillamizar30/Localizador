@@ -159,7 +159,7 @@ body {
 
 /* Estilos del pie de página */
 .footer {
-    background-color: #b0e0e6; /* Celeste */
+    background-color: #08d0af; /* Celeste */
     color: #fff;
     text-align: center;
     padding: 15px 0;
@@ -333,4 +333,182 @@ body {
 .contact-icon:hover {
     transform: scale(1.1);
     color: #00bfff; /* Azul celeste más claro */
+}
+/* Sección de contenido */
+/* Títulos de las secciones */
+.section-title {
+    font-size: 2rem;
+    color: #4682b4; /* Azul oscuro */
+    margin-bottom: 20px;
+    text-align: center;  /* Centrado del título */
+}
+
+/* Estilos del banner */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 300px; /* Altura ajustable */
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: zoom-in 1.5s ease-out, fade-in 1s ease-in-out;
+}
+
+.banner-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(60%); /* Oscurecer un poco la imagen para resaltar el texto */
+}
+
+.banner-content {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    color: white;
+    z-index: 1;
+    animation: slide-in 1s ease-in-out;
+}
+
+.banner-logo {
+    width: 80px; /* Ajusta el tamaño del logo */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.banner-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #ffffff;
+    animation: fade-in 1s ease-in-out;
+}
+
+.banner-text {
+    font-size: 1.2rem;
+    color: #f0f8ff;
+}
+
+/* Animaciones */
+@keyframes zoom-in {
+    from { transform: scale(0.9); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slide-in {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+/* Estilos del header */
+.header {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Ajuste de altura del header */
+    overflow: hidden;
+    animation: slide-in 1s ease-in-out;
+}
+
+.banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.banner-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(60%);
+}
+
+.banner-content {
+    position: absolute;
+    text-align: center;
+    z-index: 2;
+    color: white;
+    animation: fade-in 1s ease-in-out;
+}
+
+.banner-logo {
+    width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.banner-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.banner-text {
+    font-size: 1.2rem;
+    color: #f0f8ff;
+}
+
+/* Estilos del título principal del header */
+.header-title {
+    position: absolute;
+    top: 120px; /* Ajuste de la posición del título */
+    left: 20px;
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: bold;
+    z-index: 2;
+}
+
+/* Estilos de la navegación */
+.nav {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    z-index: 2;
+}
+
+.nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.nav-link.active {
+    font-weight: bold;
+    border-bottom: 2px solid #fff;
+}
+/* Ajuste de los márgenes para los textos en la página de inicio */
+.main-content {
+    margin-top: 50px; /* Reducción del espacio superior */
+    padding: 20px;
+}
+
+/* Ajuste adicional para otros textos si es necesario */
+.section-text {
+    margin-top: 10px; /* Ajusta este valor según lo necesario */
+}
+
+/* Ajuste del título de sección */
+.section-title {
+    margin-top: 20px; /* Ajuste del margen superior */
 }

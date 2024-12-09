@@ -8,7 +8,14 @@
 </head>
 <body>
     <header class="header slide-in">
-        <h1 class="header-title">Medicina Integral</h1>
+        <div class="banner">
+            <img src="tu-imagen-de-fondo.jpg" alt="Fondo" class="banner-image">
+            <div class="banner-content">
+                <img src="tu-logo.png" alt="Logo" class="banner-logo">
+                <h1 class="banner-title">Medicina Integral</h1>
+                <p class="banner-text"></p>
+            </div>
+        </div>
         <nav class="nav">
             <ul>
                 <li><a href="inicio.html" class="nav-link active">Inicio</a></li>
@@ -18,17 +25,45 @@
                 <li><a href="consultas.html" class="nav-link">Consultas en Línea</a></li>
             </ul>
         </nav>
-    </header>
-    
+    </header>    
     <main class="main-content">
-        <section id="home" class="hero-container">
-            <img src="Inicio.png" alt="Imagen de Inicio" class="hero-image">
+        <!-- Espaciado inicial para mover las secciones más abajo -->
+        <div style="height: 100px;"></div>
+
+        <!-- Texto de bienvenida -->
+        <section class="section fade-in">
+            <h2 class="section-title zoom-in">¡Bienvenidos a Medicina Integral!</h2>
+            <p class="section-text slide-in">
+                En Medicina Integral, estamos comprometidos con la salud y el bienestar de nuestros pacientes.
+                Ofrecemos servicios médicos especializados y un enfoque integral para el manejo de patologías crónicas.
+                Nuestro objetivo es brindar atención personalizada y de alta calidad.
+            </p>
+        </section>
+
+        <!-- Visión -->
+        <section class="section fade-in">
+            <h2 class="section-title">Nuestra Visión</h2>
+            <p class="section-text">
+                Ser el referente líder en la prestación de servicios médicos integrales en la región, destacándonos por nuestra excelencia, innovación y compromiso en el cuidado de la salud. Aspiramos a construir una comunidad saludable a través de un enfoque preventivo y educativo, fomentando la adopción de estilos de vida saludables y un manejo óptimo de patologías crónicas. Buscamos impactar positivamente en la calidad de vida de nuestros pacientes y sus familias, promoviendo una cultura de bienestar sostenible.
+            </p>
+        </section>
+
+        <!-- Misión -->
+        <section class="section slide-in">
+            <h2 class="section-title">Nuestra Misión</h2>
+            <p class="section-text">
+                Proveer servicios de salud de alta calidad, personalizados y centrados en el paciente, con un enfoque integral que abarca desde la prevención y promoción de la salud hasta el tratamiento y manejo de enfermedades crónicas. Nuestro compromiso es garantizar el bienestar físico, emocional y social de cada paciente mediante la combinación de atención basada en evidencia científica, tecnología avanzada y un equipo médico altamente capacitado. Trabajamos con empatía, ética y profesionalismo para satisfacer las necesidades de nuestros pacientes y contribuir al desarrollo de una sociedad más saludable.
+            </p>
+        </section>
+
+        <!-- Imagen Hero -->
+        <section id="home" class="hero-container zoom-in">
+            <img src="hero-image.jpg" alt="Hero Image" class="hero-image">
             <a href="servicios.html" class="cta-button">Nuestros Servicios</a>
         </section>
     </main>
-    
-    <footer class="footer">
-        <p>&copy; 2024 Medicina Online. Todos los derechos reservados.</p>
+    <footer class="footer fade-in">
+        <p>&copy; 2024 Medicina Integral. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>

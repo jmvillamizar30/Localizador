@@ -1,4 +1,5 @@
-About.html
+ABOUT.HTML
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -6,13 +7,162 @@ About.html
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre Nosotros - Medicina Integral</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilos para animaciones y colores anteriores */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+        }
+
+        .header {
+            background-color: #b0e0e6;
+            color: #ffffff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        .header-title {
+            margin: 0;
+            font-size: 2em;
+            animation: fadeIn 2s ease;
+        }
+
+        .nav {
+            margin-top: 10px;
+        }
+
+        .nav-link {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1em;
+        }
+
+        .nav-link:hover {
+            text-decoration: underline;
+        }
+
+        .about-section {
+            padding: 40px 20px;
+            text-align: center;
+            background-color: #ffffff;
+            max-width: 900px;
+            margin: 20px auto;
+            border-radius: 10px;
+            animation: slideIn 1.5s ease;
+        }
+
+        .section-title {
+            font-size: 2em;
+            color: #4682b4;
+            margin-bottom: 20px;
+        }
+
+        .about-image-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .about-banner {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-height: 300px; /* Ajustar tamaño */
+            animation: zoomIn 2s ease;
+        }
+
+        .doctor-profile {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            animation: fadeInUp 1.5s ease;
+        }
+
+        .profile-image {
+            max-width: 150px;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .profile-info {
+            max-width: 600px;
+            text-align: left;
+        }
+
+        .doctor-name {
+            font-size: 1.5em;
+            color: #004d7a;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #333333;
+            margin-bottom: 15px;
+        }
+
+        .footer {
+            background-color: #1e90ff;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+            font-size: 0.9em;
+        }
+
+        /* Animaciones */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes zoomIn {
+            from {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
 </head>
 <body>
-    <header class="header slide-in">
+    <header class="header">
         <h1 class="header-title">Medicina Integral</h1>
         <nav class="nav">
             <ul>
-                <li><a href="inicio.html" class="nav-link">Inicio</a></li>
+                <li><a href="index.html" class="nav-link">Inicio</a></li>
                 <li><a href="servicios.html" class="nav-link">Servicios</a></li>
                 <li><a href="about.html" class="nav-link active">Sobre Nosotros</a></li>
                 <li><a href="contact.html" class="nav-link">Contacto</a></li>
@@ -20,32 +170,41 @@ About.html
             </ul>
         </nav>
     </header>
-    <main class="main-content">
-        <section class="section slide-in">
+    <main>
+        <section class="about-section">
             <h2 class="section-title">Sobre Nosotros</h2>
-            <div class="team-photo-container">
-                <img src="medicos.jpg" alt="Equipo Médico" class="team-photo">
+            <!-- Imagen centralizada -->
+            <div class="about-image-container">
+                <img src="medicos.jpg" alt="Equipo médico trabajando" class="about-banner">
             </div>
-            <div class="team-members">
-                <div class="team-member">
-                    <img src="doctor1.jpg" alt="Doctor 1" class="profile-photo">
-                    <h3>Dr. Juan Pérez</h3>
-                    <p>Médico General con 10 años de experiencia en atención primaria.</p>
-                </div>
-                <div class="team-member">
-                    <img src="doctor2.jpg" alt="Doctor 2" class="profile-photo">
-                    <h3>Dr. Ana Gómez</h3>
-                    <p>Especialista en medicina interna con enfoque en salud preventiva.</p>
+            <!-- Perfil del médico -->
+            <div class="doctor-profile">
+                <img src="doctor1.jpg" alt="Foto del Médico" class="profile-image">
+                <div class="profile-info">
+                    <h3 class="doctor-name">Dra. Dennis Cardenas</h3>
+                    <p>
+                        Soy Médico General, graduada de la Universidad Cooperativa de Colombia, y Magíster en Epidemiología de la Universidad del Magdalena. Poseo más de 10 años de experiencia en la atención primaria, especializándome en el manejo de patologías crónicas como diabetes mellitus e hipertensión arterial.
+                    </p>
+                    <p>
+                        Mi experiencia profesional incluye, además, mi rol como profesora catedrática del programa de Medicina de la Universidad Cooperativa de Colombia, donde imparto conocimientos y apoyo la formación de futuros médicos.
+                    </p>
+                    <p>
+                        Mi enfoque profesional se basa en brindar atención de alta calidad, adaptada a las necesidades particulares de cada paciente, asegurando siempre su bienestar y promoviendo su salud de manera integral.
+                    </p>
                 </div>
             </div>
         </section>
     </main>
-    <footer class="footer fade-in">
+    <footer class="footer">
         <p>&copy; 2024 Medicina Online. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>
-Consultas.html
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+CONSULTAS.HTML
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -70,7 +229,7 @@ Consultas.html
     <main class="main-content">
         <section class="section slide-in">
             <h2 class="section-title">Consulta en Línea</h2>
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSer7QlINK35Fbg4yQKfy3fwVVXRkoSHShzrLUMTPQFd4MGFKg/viewform" width="100%" height="1200" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc8GTvx4jzr4XJ8a4eYap7vxnJpRi-x9CFm5DRTvSecR28A3A/viewform?fbzx=-1713763402371239218" width="100%" height="1200" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
         </section>
     </main>
     <footer class="footer fade-in">
@@ -78,7 +237,11 @@ Consultas.html
     </footer>
 </body>
 </html>
-contact.html
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+CONTACT.html
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -86,6 +249,8 @@ contact.html
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto - Medicina Integral</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Enlace para Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
     <header class="header slide-in">
@@ -103,9 +268,29 @@ contact.html
     <main class="main-content">
         <section class="section slide-in">
             <h2 class="section-title">Contáctanos</h2>
-            <p class="section-text">Puedes contactarnos a través de WhatsApp o por correo electrónico.</p>
-            <a href="https://wa.me/3143325432" class="cta-button">Enviar Mensaje por WhatsApp</a>
-            <a href="mailto:denniscardenaszambrano@gmail.com" class="cta-button">Enviar Correo Electrónico</a>
+            <p class="section-text">Puedes contactarnos a través de WhatsApp o por correo electrónico. Haz clic en los botones o utiliza los iconos para más detalles.</p>
+            
+            <!-- Botones con íconos -->
+            <div class="contact-icons">
+                <a href="https://wa.me/3143325432" class="cta-button">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
+                <!-- Redirigir a formulario de Google -->
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSc8GTvx4jzr4XJ8a4eYap7vxnJpRi-x9CFm5DRTvSecR28A3A/viewform?fbzx=-1713763402371239218" class="cta-button">
+                    <i class="fas fa-envelope"></i> Enviar Correo (Formulario)
+                </a>
+            </div>
+
+            <!-- Íconos grandes adicionales para referencia visual -->
+            <div class="icon-display">
+                <a href="https://wa.me/3143325432" class="contact-icon">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <!-- Redirigir a formulario de Google -->
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSc8GTvx4jzr4XJ8a4eYap7vxnJpRi-x9CFm5DRTvSecR28A3A/viewform?fbzx=-1713763402371239218" class="contact-icon">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
         </section>
     </main>
     <footer class="footer fade-in">
@@ -113,7 +298,11 @@ contact.html
     </footer>
 </body>
 </html>
-index.html
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+INDEX.HTML
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -136,10 +325,17 @@ index.html
         </nav>
     </header>
     <main class="main-content">
-        <section id="home" class="section slide-in">
-            <h2 class="section-title zoom-in">Bienvenidos a Medicina Integral</h2>
-            <p class="section-text fade-in">Ofrecemos servicios médicos de alta calidad a través de internet. Descubre nuestras ofertas y conoce a nuestro equipo.</p>
-        
+        <section id="welcome" class="section fade-in">
+            <h2 class="section-title">Bienvienidos a Medicia Integral</h2>
+            <p class="section-text">
+                En Medicina Integral, estamos comprometidos con la salud y el bienestar de nuestros pacientes. 
+                Ofrecemos servicios médicos especializados y un enfoque integral para el manejo de patologías crónicas. 
+                Nuestro objetivo es brindar atención personalizada y de alta calidad.
+            </p>
+        </section>
+        <section id="home" class="hero-container zoom-in">
+            <img src="hero-image.jpg" alt="Hero Image" class="hero-image">
+            <a href="servicios.html" class="cta-button">Nuestros Servicios</a>
         </section>
     </main>
     <footer class="footer fade-in">
@@ -147,7 +343,11 @@ index.html
     </footer>
 </body>
 </html>
-inicio.html
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+INICIO-HTML
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -170,17 +370,51 @@ inicio.html
         </nav>
     </header>
     <main class="main-content">
+        <!-- Espaciado inicial para mover las secciones más abajo -->
+        <div style="height: 100px;"></div>
+
+        <!-- Texto de bienvenida -->
+        <section class="section fade-in">
+            <h2 class="section-title zoom-in">¡Bienvenidos a Medicina Integral!</h2>
+            <p class="section-text slide-in">
+                En Medicina Integral, estamos comprometidos con la salud y el bienestar de nuestros pacientes.
+                Ofrecemos servicios médicos especializados y un enfoque integral para el manejo de patologías crónicas.
+                Nuestro objetivo es brindar atención personalizada y de alta calidad.
+            </p>
+        </section>
+
+        <!-- Visión -->
+        <section class="section fade-in">
+            <h2 class="section-title">Nuestra Visión</h2>
+            <p class="section-text">
+                Ser el referente líder en la prestación de servicios médicos integrales en la región, destacándonos por nuestra excelencia, innovación y compromiso en el cuidado de la salud. Aspiramos a construir una comunidad saludable a través de un enfoque preventivo y educativo, fomentando la adopción de estilos de vida saludables y un manejo óptimo de patologías crónicas. Buscamos impactar positivamente en la calidad de vida de nuestros pacientes y sus familias, promoviendo una cultura de bienestar sostenible.
+            </p>
+        </section>
+
+        <!-- Misión -->
+        <section class="section slide-in">
+            <h2 class="section-title">Nuestra Misión</h2>
+            <p class="section-text">
+                Proveer servicios de salud de alta calidad, personalizados y centrados en el paciente, con un enfoque integral que abarca desde la prevención y promoción de la salud hasta el tratamiento y manejo de enfermedades crónicas. Nuestro compromiso es garantizar el bienestar físico, emocional y social de cada paciente mediante la combinación de atención basada en evidencia científica, tecnología avanzada y un equipo médico altamente capacitado. Trabajamos con empatía, ética y profesionalismo para satisfacer las necesidades de nuestros pacientes y contribuir al desarrollo de una sociedad más saludable.
+            </p>
+        </section>
+
+        <!-- Imagen Hero -->
         <section id="home" class="hero-container zoom-in">
             <img src="hero-image.jpg" alt="Hero Image" class="hero-image">
             <a href="servicios.html" class="cta-button">Nuestros Servicios</a>
         </section>
     </main>
     <footer class="footer fade-in">
-        <p>&copy; 2024 Medicina Online. Todos los derechos reservados.</p>
+        <p>&copy; 2024 Medicina Integral. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>
-servicios.html
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+SERVICIOS.HTML
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -205,7 +439,31 @@ servicios.html
     <main class="main-content">
         <section class="section slide-in">
             <h2 class="section-title">Nuestros Servicios</h2>
-            <p class="section-text">Nuestro servicio especializado en diabetes ofrece atención integral para quienes viven con esta condición. Ayudamos a nuestros pacientes a entender su diagnóstico, controlar sus niveles de glucosa y recibir asesoramiento sobre medicamentos, dieta y estilo de vida saludable. Nuestro objetivo es mejorar la calidad de vida a través de un enfoque personalizado y constante.</p>
+            <div class="service-container">
+                <!-- Servicio 1 -->
+                <div class="service-item fade-in">
+                    <img src="Nutricion.png" alt="Nutrición" class="service-image">
+                    <h3>Nutrición</h3>
+                    <p>Asesoría personalizada para una alimentación equilibrada que promueva la salud y el bienestar.</p>
+                </div>
+                <!-- Servicio 2 -->
+                <div class="service-item fade-in">
+                    <img src="servicio-diabetes.jpg" alt="Diabetes Mellitus" class="service-image">
+                    <h3>Control de Patologías Crónicas</h3>
+                    <ul>
+                        <li>Diabetes Mellitus</li>
+                        <li>Hipertensión Arterial</li>
+                        <li>Obesidad</li>
+                        <li>Riesgo Cardiovascular</li>
+                    </ul>
+                </div>
+                <!-- Servicio 3 -->
+                <div class="service-item fade-in">
+                    <img src="prevencion.png" alt="Prevención" class="service-image">
+                    <h3>Promoción de la Salud y Prevención de Enfermedades</h3>
+                    <p>Programas de prevención para mantener un estilo de vida saludable y reducir riesgos.</p>
+                </div>
+            </div>
         </section>
     </main>
     <footer class="footer fade-in">
@@ -213,7 +471,11 @@ servicios.html
     </footer>
 </body>
 </html>
-styles.css
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+STYLES.CCS
+
 /* Reset básico */
 * {
     margin: 0;
@@ -412,3 +674,159 @@ body {
 .zoom-in {
     animation: zoom-in 1s ease-in-out;
 }
+/* Animaciones */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes zoom-in {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+/* Animación de la imagen */
+.hero-image {
+    width: 45%; /* Asegúrate de que la imagen ocupe el 100% de su contenedor */
+    max-width: 800px; /* Limita el tamaño máximo de la imagen */
+    height: auto;
+    border-radius: 10px; /* Bordes redondeados para la imagen */
+    margin: 0 auto; /* Centra la imagen */
+    display: block;
+    animation: zoom-in 1.5s ease-out, fade-in 1s ease-in-out; /* Combinación de ambas animaciones */
+}
+/* Contenedor de servicios */
+.service-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Elementos de servicio */
+.service-item {
+    text-align: center;
+    flex: 1 1 calc(33.333% - 20px);
+    margin: 10px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fade-in 1s ease-in-out;
+}
+
+/* Imágenes de servicios */
+.service-image {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* Sección de perfil del médico */
+.doctor-profile {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Imagen de perfil */
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Descripción del perfil */
+.profile-description {
+    flex: 1;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+}
+.about-image-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about-banner {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+/* Íconos de contacto */
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.contact-icons .cta-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 1.2rem;
+}
+
+.icon-display {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 30px;
+}
+
+.contact-icon {
+    font-size: 3rem;
+    color: #1e90ff; /* Azul claro */
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.contact-icon:hover {
+    transform: scale(1.1);
+    color: #00bfff; /* Azul celeste más claro */
+}
+/* Sección de contenido */
+.section {
+    padding: 30px;
+    margin: 40px 0;  /* Ajuste de márgenes para un espaciado consistente */
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos de las secciones */
+.section-title {
+    font-size: 2rem;
+    color: #4682b4; /* Azul oscuro */
+    margin-bottom: 20px;
+    text-align: center;  /* Centrado del título */
+}
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
