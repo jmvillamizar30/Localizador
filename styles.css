@@ -512,3 +512,873 @@ body {
 .section-title {
     margin-top: 20px; /* Ajuste del margen superior */
 }
+
+/* Estilos generales para todas las páginas */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+header {
+    background: #0077b6;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #90e0ef;
+}
+
+header nav ul li a.active {
+    text-decoration: underline;
+}
+
+.intro {
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(135deg, #caf0f8, #90e0ef);
+    color: #03045e;
+}
+
+.intro h1 {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    color: #023e8a;
+    border: 3px solid #fff;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    animation: floatBorder 3s infinite;
+}
+
+.intro p {
+    font-size: 1.2rem;
+}
+
+.planes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out 0.5s forwards;
+}
+
+.plan {
+    background: #fff;
+    padding: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.plan:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.plan h2 {
+    font-size: 1.8rem;
+    color: #023e8a;
+    margin-bottom: 1rem;
+}
+
+.plan p {
+    margin-bottom: 1rem;
+}
+
+.plan ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1rem;
+}
+
+.plan ul li {
+    margin: 0.5rem 0;
+}
+
+.plan .precio {
+    font-size: 1.5rem;
+    color: #03045e;
+    font-weight: bold;
+}
+
+.plan button {
+    background: #0077b6;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.plan button:hover {
+    background: #023e8a;
+    transform: scale(1.1);
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #0077b6;
+    color: #fff;
+    margin-top: 2rem;
+    position: relative;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes floatBorder {
+    0%, 100% {
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.3);
+    }
+    50% {
+        box-shadow: 0 0 15px rgba(255, 255, 255, 0.7), 0 0 30px rgba(255, 255, 255, 0.5);
+    }
+}
+
+.detalle-plan {
+    text-align: center;
+    padding: 2rem;
+    background: #f8f9fa;
+}
+
+.detalle-plan h2 {
+    color: #023e8a;
+    margin-bottom: 1rem;
+}
+
+.detalle-plan ul {
+    list-style: disc;
+    margin: 0 auto 2rem;
+    padding: 0 1rem;
+    text-align: left;
+    max-width: 600px;
+}
+
+.detalle-plan h3.precio {
+    color: #0077b6;
+    font-size: 1.8rem;
+    margin: 1rem 0;
+}
+
+.detalle-plan button {
+    background: #0077b6;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.detalle-plan button:hover {
+    background: #023e8a;
+}
+
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos básicos */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.plan-details {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.plan-details h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.price {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin: 10px 0;
+}
+
+.plan-details ul {
+    list-style: none;
+    margin: 20px 0;
+}
+
+.plan-details ul li {
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #0077b6;
+    color: #fff;
+    margin-top: 40px;
+}
+
+/* Fuentes de Google */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Poppins:wght@300;400;600&display=swap');
+
+/* Estilo general */
+
+/* Encabezado */
+.header {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('tu-imagen-de-fondo.jpg') no-repeat center center/cover;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-logo {
+    max-width: 150px;
+    margin-bottom: 15px;
+}
+
+.banner-title {
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav li {
+    margin: 0 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #599fe6;
+}
+
+/* Sección principal */
+main {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.intro h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.intro p {
+    font-size: 1.2rem;
+    color: #777;
+    margin-top: 10px;
+}
+
+/* Planes de Pago */
+.planes {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.plan {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    padding: 20px;
+    text-align: left;
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 30px;
+}
+
+.plan:hover {
+    transform: translateY(-10px);
+}
+
+.plan h2 {
+    color: #3e4c59;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.plan p {
+    color: #777;
+    font-size: 1rem;
+}
+
+.plan ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+}
+
+.plan ul li {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.precio {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #ff8a00;
+    margin-bottom: 20px;
+}
+
+/* Botón */
+button, .btn {
+    background-color: #ff8a00;
+    color: white;
+    font-size: 1.1rem;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s ease-in-out;
+    width: 100%;
+    text-align: center;
+}
+
+button:hover, .btn:hover {
+    background-color: #ff8a00;
+    transform: scale(1.05);
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.header, .intro, .plan {
+    animation: fadeIn 1s ease-out;
+}
+
+/* Estilo general */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7fc;
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* Encabezado */
+.header {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('tu-imagen-de-fondo.jpg') no-repeat center center/cover;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-logo {
+    max-width: 150px;
+    margin-bottom: 15px;
+}
+
+.banner-title {
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav li {
+    margin: 0 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #599fe6;
+}
+
+/* Sección principal */
+main {
+    padding: 40px 20px;
+    text-align: center;
+    animation: fadeInUp 1s ease-out;
+}
+
+.intro h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.intro p {
+    font-size: 1.2rem;
+    color: #777;
+    margin-top: 10px;
+}
+
+/* Detalle del plan */
+.detalle-plan {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 800px;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+/* Planes de Pago */
+.planes {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.plan {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    padding: 20px;
+    text-align: left;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    margin-bottom: 30px;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+.plan:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.plan h2 {
+    color: #3e4c59;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.plan p {
+    color: #777;
+    font-size: 1rem;
+}
+
+.plan ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+}
+
+.plan ul li {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.precio {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #ff8a00;
+    margin-bottom: 20px;
+}
+
+/* Botón */
+button, .btn {
+    background-color: #ff8a00;
+    color: white;
+    font-size: 1.1rem;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s ease-in-out;
+    width: 100%;
+    text-align: center;
+}
+
+button:hover, .btn:hover {
+    background-color: #ff6a00;
+    transform: scale(1.05);
+}
+
+/* Animaciones */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Estilo general */
+body {
+    font-family: 'Lora', serif; /* Fuente más profesional */
+    margin: 0;
+    padding: 0;
+    background-color: #f7f8fa;
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Encabezado */
+.header {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    background-color: #1a2a3a; /* Fondo oscuro elegante */
+}
+
+.banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('tu-imagen-de-fondo.jpg') no-repeat center center/cover;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-logo {
+    max-width: 180px;
+    margin-bottom: 15px;
+}
+
+.banner-title {
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase; /* Añadir mayúsculas */
+}
+
+/* Barra de navegación */
+.nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav li {
+    margin: 0 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.nav-link:hover {
+    color: #3dcedf; /* Color de hover más sofisticado */
+    transform: translateY(-3px); /* Desplazamiento sutil */
+}
+
+/* Sección principal */
+main {
+    padding: 50px 30px;
+    text-align: center;
+    animation: fadeInUp 1s ease-out;
+    margin-top: -30px; /* Ajuste de espaciado */
+}
+
+/* Títulos de las secciones */
+.intro h1 {
+    font-size: 3rem;
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.intro p {
+    font-size: 1.2rem;
+    color: #777;
+    margin-top: 15px;
+}
+
+/* Detalle de plan */
+.detalle-plan {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    margin: 30px auto;
+    max-width: 900px;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+/* Planes de Pago */
+.planes {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 40px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.plan {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    padding: 25px;
+    text-align: left;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    margin-bottom: 40px;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+.plan:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.plan h2 {
+    color: #3e4c59;
+    font-size: 1.9rem;
+    margin-bottom: 15px;
+}
+
+.plan p {
+    color: #555;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.plan ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+}
+
+.plan ul li {
+    font-size: 0.95rem;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+/* Precio */
+.precio {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #f7b731; /* Color de precio más sofisticado */
+    margin-bottom: 20px;
+}
+
+/* Botones refinados */
+button, .btn {
+    background-color: #f7b731;
+    color: white;
+    font-size: 1.2rem;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s ease-in-out;
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+button:hover, .btn:hover {
+    background-color: #f39c12; /* Hover con tono más oscuro */
+    transform: scale(1.05);
+}
+
+/* Animaciones */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Pie de página */
+footer {
+    background-color: #2a3b4c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1rem;
+    margin-top: 50px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Estilo de enlaces en pie de página */
+footer a {
+    color: #f7b731;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: white;
+}
